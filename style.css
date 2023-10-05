@@ -1,0 +1,57 @@
+ body {
+      background-image: url(https://th.bing.com/th/id/OIP.9Q5mpBK2xIta-Z4fT6iU7QHaEK?pid=ImgDet&rs=1);
+      background-size: cover; /* Cover the entire viewport */
+      background-attachment: fixed; /* Fixed background position */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #fff; /* Default text color for the page */
+    }
+
+    .lyrics-container {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for lyrics */
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      display: inline-block;
+      overflow: hidden; /* Hide overflowing text */
+    }
+
+    .lyrics {
+      color: #fff; /* White text color */
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      opacity: 0; /* Initially hidden */
+      transform: translateY(50px); /* Initial position */
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .lyrics-container:hover 
+    
+    .lyrics {
+      opacity: 1; /* Fade in on hover */
+      transform: translateY(0); /* Move up on hover */
+    }
+    
+    .sad-effect {
+      transition: color 0.5s ease-in-out;
+    }
+
+    .sad-effect:hover {
+      color: skyblue; /* Blue text color on hover */
+    }
+    @keyframes shine {
+        0% {
+            text-shadow: none;
+        }
+        50% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+        100% {
+            text-shadow: none;
+        }
+    }
